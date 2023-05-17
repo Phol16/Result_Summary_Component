@@ -1,0 +1,174 @@
+@font-face {
+  font-family: customFont;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+  --lightRed: hsl(0, 100%, 67%);
+  --lightRedL: hsl(0, 100%, 67%, 0.1);
+  --orangeYellow: hsl(39, 100%, 56%);
+  --orangeYellowL: hsl(39, 100%, 56%, 0.1);
+  --greenTeal: hsl(166, 100%, 37%);
+  --greenTealL: hsl(166, 100%, 37%, 0.1);
+  --cobaltBlue: hsl(234, 85%, 45%);
+  --cobaltBlueL: hsl(234, 85%, 45%, 0.1);
+
+  --LightSlateBlue: hsl(252, 100%, 67%); /*background*/
+  --LightRoyalBlue: hsl(241, 81%, 54%); /*background*/
+
+  --VioletBlue: hsla(256, 72%, 46%, 1); /*circle*/
+  --PersianBlue: hsla(241, 72%, 46%, 0); /*circle*/
+
+  --White: hsl(0, 0%, 100%);
+  --PaleBlue: hsl(221, 100%, 96%);
+  --LightLavender: hsl(241, 100%, 89%);
+  --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: 'customFont';
+}
+.lightColorText {
+  color: var(--LightLavender);
+}
+.whiteColorText {
+  color: var(--White);
+}
+.darkGrayBlue {
+  color: var(--DarkGrayBlue);
+}
+.lightRed {
+  background: var(--lightRedL);
+  color: var(--lightRed);
+}
+.greenTeal {
+  background: var(--greenTealL);
+  color: var(--greenTeal);
+}
+.orangeYellow {
+  background: var(--orangeYellowL);
+  color: var(--orangeYellow);
+}
+.cobaltBlue {
+  background: var(--cobaltBlueL);
+  color: var(--cobaltBlue);
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 375px;
+  margin: auto;
+  box-shadow: 1px 1px 10px var(--PaleBlue);
+  height: fit-content;
+}
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  padding: 2rem 1rem;
+  border-radius: 0 0 30px 30px;
+  background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
+  text-align: center;
+}
+h1 {
+  font-size: 1.2rem;
+}
+.mainContainer h2 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10px;
+}
+.mainContainer h2 span {
+  max-width: 17rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.resultCircle {
+  align-self: center;
+  width: fit-content;
+  border-radius: 100%;
+  padding: 20px;
+  background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+}
+.resultCircle p {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.resultCircle span {
+  font-size: 1rem;
+}
+.subContainer {
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+}
+.continueButton {
+  background-color: var(--DarkGrayBlue);
+  border: none;
+  padding: 1.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 30px;
+}
+.dataResult {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+.resultContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 10px;
+}
+.resultText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.resultContainer p {
+  font-weight: 800;
+}
+.continueButton:hover {
+  background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 640px) {
+  .component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .container {
+    max-width: none;
+    width: 800px;
+    flex-flow: row;
+    border-radius: 20px;
+  }
+  .mainContainer {
+    border-radius: 30px;
+    flex: 0.8;
+  }
+  .subContainer {
+    flex: 1;
+  }
+}
