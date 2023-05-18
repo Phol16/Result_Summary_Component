@@ -8,14 +8,17 @@ Frontend web development
 
 Mobile View
 
+<img src='./design/mobile-design.jpg' alt='Image'/>
+
 Desktop View
 
+<img src='./design/desktop-preview.jpg' alt='Image'/>
 
 ### Links
 
-- Source Code: 
+- Source Code: https://github.com/Phol16/Result_Summary_Component
 
-- Live Site: 
+- Live Site: https://phol16.github.io/Result_Summary_Component/
 
 ### My process
 
