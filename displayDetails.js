@@ -22,7 +22,7 @@ const displayResult = data
   <div class='resultContainer ${colorFunction(result.category)}'>
   <section class="resultText">
   <img src='${result.icon}' alt='Icon'/>
-  <h3>${result.category}</h3>
+  <h1>${result.category}</h1>
   </section>
   <p class='darkGrayBlue'>${result.score} 
   <span class='lightColorText'>/ 100</span>
